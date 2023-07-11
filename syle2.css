@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: rgb(231, 224, 224);
+    height: auto;
+    width: auto;
+    display:grid;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform:translatex(-300px);
+
+    }
+    to{
+        transform:translateX(0);
+        }
+}
+@keyframes slideIntop{
+    from{
+        transform:translateX(-250px);
+    }
+    to{
+        transform:translatex(0);
+    }
+}
+@keyframes fadein{
+    from{
+        opacity : 0;
+    }
+    to{
+        opacity :1;
+    }
+}
+.logo>img{
+    width:auto;
+    height: 120px;
+    margin-left: 43%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    filter: drop-shadow(2px 2px 60px rgb(206, 199, 214));
+    animation:slideIntop 1s ease-in-out;
+}
+h1{
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+    font-family:Snell Roundhand, cursive;
+    margin-top: 20px;
+    animation: fadein 4s 1;
+    margin-left: 39%;
+    filter:drop-shadow(2px 3px 2px rgb(95, 28, 239)) ;
+}
+img{
+    width: 19%;
+    height:auto;
+    border-radius: 20px;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    filter:drop-shadow(2px 2px 5px rgb(6, 7, 6)) ;
+}
+h5{
+    color:rgb(7, 7, 7);
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    animation:fadein 4s 1;
+    margin-left: 2%;
+}
